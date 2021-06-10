@@ -31,7 +31,8 @@ function createAccusation(i) {
     var w = i % weapon.length;
 
     var h3 = document.createElement('h3');
-    h3.textContent = 'Accusation ' + (i);
+    var text = document.createTextNode('Accusation ' + (i));
+    (h3).appendChild(text);
     document.body.appendChild(h3);
 
 
